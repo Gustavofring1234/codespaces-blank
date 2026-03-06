@@ -1,0 +1,16 @@
+{
+  "name": "Debian XFCE (noVNC)",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "remoteUser": "vscode",
+  "forwardPorts": [8080, 5901],
+  "postCreateCommand": "echo 'Devcontainer ready. Use port 8080 to access noVNC.'",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-vscode-remote.remote-containers"
+      ]
+    }
+  }
+}
